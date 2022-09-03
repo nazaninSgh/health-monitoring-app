@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity"
+    android:id="@+id/page"
+    android:background="#e7f4e3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Patient Monitoring"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_gravity="center_horizontal"
+        />
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/bpm"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/heartl"
+            android:id="@+id/heart"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/situation"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:id="@+id/rateTxt"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/heart"
+            android:text="heart beat rate: "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtArduino2"
+            android:layout_alignBaseline="@id/situation"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@id/rateTxt"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/ic_sentiment_satisfied_black_24dp"
+            android:id="@+id/situation"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/temprature"
+            android:id="@+id/temp"
+            android:layout_marginLeft="20dp"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="temprature: "
+            android:id="@+id/tempTxt"
+            android:layout_alignBaseline="@id/temp"
+            android:layout_toRightOf="@+id/temp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtArduino"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/tempTxt"
+            android:layout_alignBaseline="@id/temp"
+
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/humid"
+            android:src="@drawable/humidity"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/humidtxt"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:text="humidity: "
+            android:layout_alignBaseline="@id/humid"
+            android:layout_toRightOf="@+id/humid"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtArduino3"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_alignBaseline="@id/humid"
+            android:layout_toRightOf="@id/humidtxt"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/iust"
+            android:src="@drawable/iust"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="IUST\ngroup 7"
+
+            android:textColor="#740707"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
